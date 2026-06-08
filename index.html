@@ -1,14 +1,291 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="id">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="styles/style.css"/>
-  <title>Hello, World!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fortofolio
+</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    padding:30px;
+}
+
+.cv-container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    display:grid;
+    grid-template-columns:300px 1fr;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.left{
+    background:#4a90e2;
+    color:white;
+    padding:30px;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+}
+
+.profile h1{
+    font-size:24px;
+    margin-top:15px;
+}
+
+.profile p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h2{
+    font-size:18px;
+    margin-bottom:10px;
+    border-bottom:2px solid rgba(255,255,255,0.5);
+    padding-bottom:5px;
+}
+
+.section ul{
+    list-style:none;
+}
+
+.section ul li{
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.right{
+    padding:35px;
+}
+
+.right .section h2{
+    color:#4a90e2;
+    border-bottom:2px solid #4a90e2;
+}
+
+.about{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+.item{
+    margin-bottom:15px;
+}
+
+.item h3{
+    color:#333;
+    font-size:16px;
+}
+
+.item span{
+    color:#777;
+    font-size:14px;
+}
+
+.skill{
+    margin-bottom:10px;
+}
+
+.skill-name{
+    margin-bottom:5px;
+    color:#444;
+}
+
+.bar{
+    height:8px;
+    background:#ddd;
+    border-radius:10px;
+}
+
+.fill{
+    height:100%;
+    background:#4a90e2;
+    border-radius:10px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:20px;
+    color:#888;
+    font-size:13px;
+}
+
+@media(max-width:768px){
+    .cv-container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
 </head>
+
 <body>
-  <h1>
-    Hello, World!
-  </h1>
+
+<div class="cv-container">
+
+    <!-- SIDEBAR -->
+    <div class="left">
+
+        <div class="profile">
+            <img src="foto.jpg" alt="Foto Profil">
+            <h1>Nama Lengkap</h1>
+            <p>Siswi SMK DKV Kelas XI</p>
+        </div>
+
+        <div class="section">
+            <h2>Kontak</h2>
+            <ul>
+                <li>📍 Kota, Provinsi</li>
+                <li>📞 08xxxxxxxxxx</li>
+                <li>✉️ email@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Keahlian</h2>
+
+            <div class="skill">
+                <div class="skill-name">Adobe Photoshop</div>
+                <div class="bar"><div class="fill" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Adobe Illustrator</div>
+                <div class="bar"><div class="fill" style="width:85%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Canva</div>
+                <div class="bar"><div class="fill" style="width:95%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CorelDRAW</div>
+                <div class="bar"><div class="fill" style="width:80%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Editing Video</div>
+                <div class="bar"><div class="fill" style="width:75%"></div></div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2>Bahasa</h2>
+            <ul>
+                <li>Indonesia</li>
+                <li>Inggris Dasar</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hobi</h2>
+            <ul>
+                <li>Mendesain Poster</li>
+                <li>Fotografi</li>
+                <li>Membuat Konten</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="right">
+
+        <div class="section">
+            <h2>Profil Singkat</h2>
+            <p class="about">
+                Siswi SMK jurusan Desain Komunikasi Visual (DKV) kelas XI yang kreatif,
+                disiplin, dan memiliki minat tinggi dalam bidang desain grafis,
+                branding, fotografi, serta konten digital. Mampu bekerja sama
+                dalam tim maupun individu, serta siap belajar dan berkembang
+                melalui kegiatan PKL atau magang.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Pendidikan</h2>
+
+            <div class="item">
+                <h3>SMK Negeri/Swasta</h3>
+                <span>Jurusan Desain Komunikasi Visual (DKV) | 2024 - Sekarang</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Pengalaman Proyek</h2>
+
+            <div class="item">
+                <h3>Desain Poster Kegiatan Sekolah</h3>
+                <span>2025</span>
+                <p>Membuat konsep visual dan desain promosi untuk acara sekolah.</p>
+            </div>
+
+            <div class="item">
+                <h3>Desain Feed Instagram</h3>
+                <span>2025</span>
+                <p>Mengembangkan konten visual untuk media sosial sekolah.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Organisasi</h2>
+
+            <div class="item">
+                <h3>Anggota OSIS / Ekstrakurikuler</h3>
+                <span>2024 - Sekarang</span>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2>Prestasi & Sertifikat</h2>
+
+            <div class="item">
+                <h3>Sertifikat Desain Grafis Dasar</h3>
+                <span>2025</span>
+            </div>
+
+            <div class="item">
+                <h3>Juara Lomba Poster Digital</h3>
+                <span>2024</span>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © 2026 | Curriculum Vitae
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
